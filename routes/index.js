@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
   console.log(req.query)
   let andy = { name: 'Andy', age: 100, cool: true }
-  res.json(req.body);
+  res.render('hello');
 });
 
 router.get('/reverse/:name', (req, res) => {
