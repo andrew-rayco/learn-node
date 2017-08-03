@@ -1,4 +1,5 @@
-.wrapper
-  p.hello Hello #{name}!
-  span#yo Yo!
-  img.dog(src="dog.jpg" alt="Dog")
+extends layout 
+
+block content
+  p Hello
+  h1  Sale ends in #{h.moment().endOf('hour').fromNow()}
