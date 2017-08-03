@@ -1,4 +1,9 @@
 .wrapper
-  p.hello Hello #{name}!
-  span#yo Yo!
+  - const upDog = name
+  p.hello Hello #{upDog.toUpperCase()}!
+  span#yo Yo! You are #{age} years old dawg!
   img.dog(src="dog.jpg" alt="Dog")
+
+h2
+  | hello 
+  em How are you?sdfsdf
