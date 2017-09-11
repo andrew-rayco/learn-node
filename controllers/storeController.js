@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Store = mongoose.model('Store')
 
 exports.homePage = (req, res) => {
-  console.log(req.name)
+  console.log(req.query.name)
   res.render('index')
 }
 
