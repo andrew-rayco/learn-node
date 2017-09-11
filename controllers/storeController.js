@@ -19,6 +19,6 @@ exports.createStore = async (req, res) => {
 
 exports.getStores = async (req, res) => {
   // 1. Query the database for a list of all stores
-  Store.find()
-  res.render('stores', { title: 'Stores' })
+  const stores = await Store.find()
+  res.render('stores', { title: 'Stores', stores })
 }
